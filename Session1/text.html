@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login and Signup</title>
+  <style>
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .signup,
+    .login {
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input {
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true" />
+    <div class="signup">
+      <form onsubmit="signUpButton(event)">
+        <label for="chk" aria-hidden="true">Sign up</label>
+        <input type="text" name="txt" placeholder="User name" required="" id="username" />
+        <input type="email" name="email" placeholder="Email" required="" id="email" />
+        <input type="password" name="pswd" placeholder="Password" required="" id="password" />
+        <button type="submit" value="submit">Sign up</button>
+      </form>
+    </div>
+
+    <div class="login">
+      <form onsubmit="signInButton(event)">
+        <label for="chk" aria-hidden="true">Login</label>
+        <input type="email" name="email" placeholder="Email" required="" id="userEmail" />
+        <input type="password" name="pswd" placeholder="Password" required="" id="userPassword" />
+        <p style="text-align: center; font-family: 'Times New Roman', Times, serif;" id="result"></p>
+        <button value="submit" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Đăng ký người dùng
+    function signUpButton(event) {
+      event.preventDefault();
+
+      var username = document.getElementById("username").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+      // Kiểm tra xem người dùng đã tồn tại trong localStorage chưa
+      if (localStorage.getItem(email)) {
+        document.getElementById("result").innerHTML = "Email already exists!";
+        return;
+      }
+
+      // Lưu thông tin đăng ký vào localStorage
+      var user = {
+        username: username,
+        password: password
+      };
+      localStorage.setItem(email, JSON.stringify(user));
+
+      document.getElementById("result").innerHTML = "Registration successful!";
+      document.getElementById("username").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("password").value = "";
+    }
+
+    // Đăng nhập
+    function signInButton(event) {
+      event.preventDefault();
+
+      var userEmail = document.getElementById("userEmail").value;
+      var userPassword = document.getElementById("userPassword").value;
+
+      // Kiểm tra xem người dùng có tồn tại trong localStorage không
+      if (localStorage.getItem(userEmail)) {
+        var user = JSON.parse(localStorage.getItem(userEmail));
+
+        // Kiểm tra mật khẩu
+        if (user.password === userPassword) {
+          document.getElementById("result").innerHTML = "Login successful!";
+          // Thực hiện hành động sau khi đăng nhập thành công
+          // Ví dụ: chuyển hướng trang, hiển thị thông báo, vv.
+        } else {
+          document.getElementById("result").innerHTML = "Invalid password!";
+        }
+      } else {
+        document.getElementById("result").innerHTML = "Email not found!";
+      }
+
+      document.getElementById("userEmail").value = "";
+      document.getElementById("userPassword").value = "";
+    }
+  </script>
+</body>
+</html>
