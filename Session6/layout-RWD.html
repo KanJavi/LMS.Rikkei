@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trang web của tôi</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .sidebar {
+        width: 100%;
+        max-width: 300px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .main-content {
+        width: 100%;
+        max-width: 900px;
+        background-color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          display: flex;
+        }
+
+        .sidebar {
+          flex: 1;
+          margin-right: 20px;
+        }
+
+        .main-content {
+          flex: 2;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Header</h1>
+      </div>
+      <div class="sidebar">
+        <h2>Sidebar</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          ullamcorper placerat tellus vel venenatis.
+        </p>
+      </div>
+      <div class="main-content">
+        <h2>Main Content</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          ullamcorper placerat tellus vel venenatis.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <h3>Footer</h3>
+    </div>
+  </body>
+</html>

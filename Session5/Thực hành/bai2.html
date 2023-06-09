@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bài 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        margin: 20px;
+      }
+      .img {
+        width: 50px;
+        height: 7px;
+        background-color: yellow;
+      }
+      .content-right {
+        display: flex;
+      }
+      ul li {
+        list-style: none;
+        padding: 10px;
+      }
+      i {
+        padding: 5px;
+      }
+      h3 {
+        margin-top: 10px;
+      }
+      form {
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+      }
+      input textarea {
+        margin: 20px;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+      }
+      textarea {
+        height: 40px;
+      }
+      input {
+        padding: 5px;
+      }
+      button {
+        width: 120px;
+        height: 30px;
+        background-color: rgb(51, 133, 240);
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-left">
+        <h2>CONTACT US</h2>
+        <div class="img"></div>
+      </div>
+      <div class="content-right">
+        <div>
+          <h3>Contact Info</h3>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> 312 Ansersome Street New
+              York, NY 17022
+            </li>
+            <li><i class="fas fa-envelope"></i> info@companyname.com</li>
+            <li><i class="fas fa-phone-alt"></i> +1 800 213 1234</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Having Any Query! Or Book an appointmnet</h3>
+          <form>
+            <input
+              type="text"
+              id="yourname"
+              name="yourname"
+              placeholder="Your Name"
+            /><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+            /><br />
+            <input
+              type="text"
+              id="Subject"
+              name="Subject"
+              placeholder="Subject"
+            /><br />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea
+            ><br />
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bài 4</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 600px;
+      }
+      .container {
+        margin-left: 100px;
+        border: 1px solid;
+        background-color: white;
+        border-radius: 5px;
+        padding: 40px;
+      }
+      h1 {
+        text-align: center;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        margin-top: 10px;
+      }
+      textarea {
+        height: 30px;
+      }
+
+      input {
+        padding: 5px;
+      }
+
+      label {
+        margin-top: 10px;
+      }
+      button {
+        width: 60px;
+        height: 30px;
+        background-color: black;
+        color: aliceblue;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tuyển dụng</h1>
+      <form action="">
+        <label for="">Họ và tên</label><br />
+        <input type="text" /> <br />
+        <label for="">Email</label><br />
+        <input type="email" /><br />
+        <label for="">Số điện thoại</label><br />
+        <input type="text" /><br />
+        <label for="">CV:</label><br />
+        <input type="file" name="" id="" /><br />
+        <label for="">Tin nhắn:</label><br />
+        <textarea name="" id="" cols="30" rows="10"></textarea><br />
+        <button>Gửi</button>
+      </form>
+    </div>
+  </body>
+</html>

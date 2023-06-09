@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai5</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+      }
+
+      body .container {
+        background-color: antiquewhite;
+        padding: 20px;
+        border: 1px solid;
+        border-radius: 5px;
+      }
+
+      input {
+        width: 100%;
+        background-color: aliceblue;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      button {
+        padding: 7px 14px;
+        color: white;
+        width: 100px;
+        background-color: rgb(30, 110, 201);
+      }
+
+      /* Định dạng phần tử form */
+      form {
+        margin: 20px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Định dạng phần tử input */
+      label {
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input {
+        padding: 10px;
+        margin-bottom: 20px;
+
+        font-size: 16px;
+      }
+
+      .container {
+        margin-left: 100px;
+      }
+      .container h2 {
+        margin-left: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Đăng ký tài khoản</h2>
+      <form action="">
+        <label for="">Họ và tên</label><br />
+        <input type="text" /> <br />
+        <label for="">Email</label><br />
+        <input type="email" /><br />
+        <label for="">Mật khẩu</label><br />
+        <input type="password" /><br />
+        <label for="">Xác nhận mật khẩu</label><br />
+        <input type="password" /><br />
+        <button type="submit">Đăng ký</button>
+      </form>
+    </div>
+  </body>
+</html>

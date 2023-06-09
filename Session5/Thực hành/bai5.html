@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bài 5</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        background-color: rgb(242 243 245);
+        height: 500px;
+      }
+      input {
+        padding: 5px;
+        margin: 5px;
+        width: 300px;
+      }
+      select {
+        padding: 5px;
+        margin: 5px;
+        width: 300px;
+      }
+      textarea {
+        padding: 5px;
+        margin: 5px;
+        width: 614px;
+        color: rgb(220 220 220);
+      }
+      button {
+        width: 614px;
+        margin-left: 4px;
+        padding: 8px;
+        background-color: black;
+        color: aliceblue;
+        border: none;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <input type="text" placeholder="Fist Name" />
+        <input type="text" placeholder="Last Name" /><br />
+        <input type="mail" placeholder="Your Name" />
+        <input type="text" placeholder="Your Phone" /><br />
+        <div class="select">
+          <select name="select" id="">
+            <option value="1" placeholder="Select Country">
+              Select Country
+            </option>
+            <option value="2">Select Country</option>
+          </select>
+          <select name="" id="">
+            <option value="3">Select Country</option>
+            <option value="4">Select Country</option></select
+          ><br />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Content"
+        ></textarea>
+        <br />
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
