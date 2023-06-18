@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Session6"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Session6"
+	}
+}

@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+nav {
+    margin: 20px;
+    background-color: white;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+}
+.app {
+    background-color: #FAFAFB;
+}
+header ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+header ul li a {
+    text-decoration: none;
+    color: #4F5055;
+    
+}
+#text-color {
+    color: #B7BBC8;
+}
+.content-left {
+    width: 800px;
+}
+form{
+    display: block;
+    margin-top: 10px 0 10px 0;
+}
+form input {
+    width: 300px;
+    border: none;
+    padding: 10px;
+    background-color: #F4F4F6;
+    border-radius: 7px;
+}
+.content-left ul li {
+    list-style: none;
+display: inline-block;
+padding: 5px;
+margin-top: 10px;
+}
+.imge ul li {
+    display: inline-block;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+   
+}
+button {
+    padding: 10px;
+    background-color:#3C71FF ;
+    color: #EFF3FF;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.content-right {
+    width: 400px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    border-color: #E7ECF4;
+    height: 600px;
+}
+.content{
+    display: flex;
+}
+.content-right p i {
+    color: #FFC542;
+}
+.content-right p{
+   
+    color: #B7BBC8;
+}
+.content-right p strong{
+color: #2A333D;
+}
+.content-right-1 img{
+    margin: 15px;
+  
+}
+h5 {
+    font-size: 15px;
+    margin:20px 20px 10px 15px;
+}
+.content-right-1 p{
+    margin-left: 15px;
+}
+.content-bottom {
+    background-color:#316BFF ;
+    color: #FFFFFF;
+    display: block;
+    width: auto;
+    border-radius: 10px;
+    margin-top: 100px;
+    display: flex;
+}
+.content-bottom-1 {
+    margin: 40px 40px 40px 50px;
+}
+.content-bottom form {
+    margin: 40px;
+}
+footer {
+    display: flex;
+    margin: 60px;
+    justify-content: space-around;
+}
+footer i{
+   color: #316BFF;
+}
+footer ul li {
+    list-style: none;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #82868A;
+}
+footer p {
+    color: #82868A;
+}
+.footer {
+    width: 250px;
+}
+.bottom-2{
+    background-color: #F4F4F6;
+    width: 300px;
+    height: 80px;
+    margin: 87px 20px 20px 106px;
+    border-radius: 20px;
+    
+}
+.bottom-2 button {
+background-color: #2A333D;
+border-radius: 4px;
+}
+.bottom-2 input {
+    border: none;
+    background-color: #F4F4F6 ;
+}
+
